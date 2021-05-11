@@ -7,9 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"D://Selenium_BDD_WheelsEMI_Project//Wheels_EMI//Feature//a_SOLogin.feature",
-                    "D://Selenium_BDD_WheelsEMI_Project//Wheels_EMI//Feature//b_CPALogin.feature"},
-        glue = {"StepDefination"}
+        features = {"D://Selenium_BDD_WheelsEMI_Project//Wheels_EMI//Feature//c_LeadCreation.feature"},
+        glue = {"StepDefination"},
+        plugin = {"html:target/Cucumber-html-report"}
+
 )
 
 public class TestRunner {
